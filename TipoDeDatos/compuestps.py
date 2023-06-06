@@ -114,3 +114,21 @@ cliente001["Nombre"] = "Juan"
 print(cliente001.get("Nombre"))
 print(cliente001)
 
+print(len(cliente001)) #longitud del diccionario
+
+cliente001["EstadoCivil"]="Viudo" #agregar elemento
+print(cliente001)
+
+cliente001.popitem() #elimina el ultimo elemento del diccionario
+print(cliente001)
+
+cliente001.pop("Celular")
+print(cliente001)
+
+del cliente001["Cedula"]
+print(cliente001)
+
+cliente002 = dict(cliente001)
+print(cliente001)
+print(cliente002)
+
